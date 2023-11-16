@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  components: {
+    dirs: []
+  },
   devtools: { enabled: true },
   css: ['~/app.scss'],
   modules: ['@nuxtjs/strapi'],

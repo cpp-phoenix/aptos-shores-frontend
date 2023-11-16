@@ -1,0 +1,16 @@
+.message {
+  &--component {
+    display: flex;
+    align-items: center;
+  }
+  &--icon {
+    margin-right: 4px;
+    color: $error;
+  }
+  &--text {
+    color: $grey400;
+  }
+  &--error {
+    color: $error;
+  }
+}

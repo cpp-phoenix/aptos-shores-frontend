@@ -1,0 +1,15 @@
+.label {
+  &--component {
+    color: $white;
+    font-size: 16px;
+    font-weight: $medium;
+
+    &-required {
+      &::after {
+        content: '*';
+        color: $error;
+        margin-left: 4px;
+      }
+    }
+  }
+}
