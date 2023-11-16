@@ -13,13 +13,13 @@ $extraBold: 800;
 
 * {
   font-family: $fontContent;
-  color: $white;
 }
 
 h1,
 .h1 {
   font-size: 34px;
   font-weight: $bold;
+  color: $white;
   @media (min-width: $tablet) {
     font-size: 50px;
   }
@@ -29,6 +29,7 @@ h2,
 .h2 {
   font-size: 28px;
   font-weight: $medium;
+  color: $white;
   @media (min-width: $tablet) {
     font-size: 35px;
   }
@@ -38,29 +39,34 @@ h3,
 .h3 {
   font-size: 25px;
   font-weight: $bold;
+  color: $white;
 }
 
 h4,
 .h4 {
   font-size: 20px;
   font-weight: $bold;
+  color: $white;
 }
 
 p,
 .paragraph {
   font-size: 16px;
   font-weight: $regular;
+  color: $white;
 }
 
 small,
 .small {
   font-size: 14px;
   font-weight: $regular;
+  color: $white;
 }
 
 .extra-small {
   font-size: 12px;
   font-weight: $regular;
+  color: $white;
 }
 
 a {

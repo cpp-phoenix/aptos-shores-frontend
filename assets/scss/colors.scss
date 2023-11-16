@@ -56,3 +56,18 @@ $error600: #8F1331;
 $error700: #660E23;
 $error800: #3D0815;
 $error900: #140307;
+
+
+/* -------------- */
+/* -- GRADIANT -- */
+/* -------------- */
+$gradiantPrimary: linear-gradient(to bottom, $primary, $primary700);
+$gradiantGrey: linear-gradient(to bottom, $grey600, $grey800);
+$gradiantError: linear-gradient(to bottom, $error, $error600);
+
+/* ------------ */
+/* -- SHADOW -- */
+/* ------------ */
+$dropPrimary: 0px 2px 0px 0px $primary400;
+$dropGrey: 0px 2px 0px 0px $grey700;
+$dropError: 0px 2px 0px 0px $error400;

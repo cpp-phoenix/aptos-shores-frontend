@@ -1,7 +1,7 @@
 <template>
   <component
-    :is="icons[name] ?? null"
-    :class="['icon--component', `icon--component-${size}`]"
+    :is="icons[props.name] ?? null"
+    :class="['icon--component', `icon--component-${props.size}`]"
   />
 </template>
 
@@ -15,7 +15,7 @@ import type { IconName } from './types';
  |--------------------------------------------------------------------------
  */
 
-defineProps<{
+const props = defineProps<{
   name: IconName;
   size?: 'large' | 'medium' | 'small' | 'xsmall';
 }>();

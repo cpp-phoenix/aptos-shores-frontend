@@ -1,0 +1,200 @@
+.button {
+  &--component {
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: $bold;
+
+    /*
+     |--------------------------------------------------------------------------
+     | Disabled
+     |--------------------------------------------------------------------------
+    */
+    &-disabled {
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    /*
+     |--------------------------------------------------------------------------
+     | Full width
+     |--------------------------------------------------------------------------
+    */
+    &-full {
+      width: 100%;
+    }
+
+    /*
+     |--------------------------------------------------------------------------
+     | Sizes
+     |--------------------------------------------------------------------------
+    */
+    &-small {
+      .button--wrapper {
+        padding: 8px 16px;
+        min-height: 30px;
+        * {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-medium {
+      .button--wrapper {
+        padding: 12px 24px;
+        min-height: 36px;
+        * {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-large {
+      .button--wrapper {
+        padding: 16px 24px;
+        min-height: 52px;
+        * {
+          font-size: 20px;
+        }
+      }
+    }
+
+    /*
+     |--------------------------------------------------------------------------
+     | Variants
+     |--------------------------------------------------------------------------
+    */
+    &-primary {
+      padding: 2px;
+      color: $white;
+      // Usage : cta
+      &.button--component-cta {
+        background: $gradiantPrimary;
+        box-shadow: $dropPrimary;
+        &:hover {
+          background: $primary600;
+        }
+      }
+      // Usage : neutral
+      &.button--component-neutral {
+        background: $gradiantGrey;
+        box-shadow: $dropGrey;
+        &:hover {
+          background: $grey800;
+        }
+      }
+      // Usage : destructive
+      &.button--component-destructive {
+        background: $gradiantError;
+        box-shadow: $dropError;
+        &:hover {
+          background: $error600;
+        }
+      }
+    }
+
+    &-secondary {
+      padding: 2px;
+      color: $white;
+      // Usage : cta
+      &.button--component-cta {
+        background: $gradiantPrimary;
+        box-shadow: $dropPrimary;
+        .button--wrapper {
+          background-color: $black;
+        }
+        &:hover {
+          .button--wrapper {
+            background-color: $primary900;
+          }
+        }
+      }
+      // Usage : neutral
+      &.button--component-neutral {
+        background: $gradiantGrey;
+        box-shadow: $dropGrey;
+        .button--wrapper {
+          background-color: $black;
+        }
+        &:hover {
+          .button--wrapper {
+            background-color: $grey800;
+          }
+        }
+      }
+      // Usage : destructive
+      &.button--component-destructive {
+        background: $gradiantError;
+        box-shadow: $dropError;
+        .button--wrapper {
+          background-color: $black;
+        }
+        &:hover {
+          .button--wrapper {
+            background-color: $error800;
+          }
+        }
+      }
+    }
+
+    &-plain {
+      padding: 0 !important;
+      background-color: transparent;
+      .button--wrapper {
+        padding: 4px;
+        min-height: auto;
+      }
+      // Usage : cta
+      &.button--component-cta {
+        color: $primary;
+        &:hover {
+          color: $primary300;
+        }
+      }
+      // Usage : neutral
+      &.button--component-neutral {
+        color: $grey500;
+        &:hover {
+          color: $grey300;
+        }
+      }
+      // Usage : destructive
+      &.button--component-destructive {
+        color: $error;
+        &:hover {
+          color: $error300;
+        }
+      }
+    }
+
+    /*
+     |--------------------------------------------------------------------------
+     | Icon Only
+     |--------------------------------------------------------------------------
+    */
+    &-icononly {
+      &.button--component-small .button--wrapper {
+        padding: 8px;
+      }
+      &.button--component-medium .button--wrapper {
+        padding: 12px;
+      }
+      &.button--component-large .button--wrapper {
+        padding: 16px;
+      }
+    }
+  }
+
+  &--wrapper {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 8px;
+    border-radius: 8px;
+  }
+}
