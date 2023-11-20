@@ -1,0 +1,44 @@
+.nav {
+  &--component {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    background-color: $grey900;
+  }
+
+  &--container {
+    flex: 1;
+    display: flex;
+    gap: 32px;
+    max-width: $containerWidth;
+    height: $navHeight;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &--menuprimary {
+    align-self: stretch;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &--item {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  &--menusecondary {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}

@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   components: {
     dirs: []
   },
+  app: {
+    pageTransition: false,
+    layoutTransition: false
+  },
   devtools: { enabled: true },
   css: ['~/app.scss'],
   modules: ['@nuxtjs/strapi'],

@@ -1,0 +1,19 @@
+.navlink {
+  &--component {
+    display: inline-flex;
+    align-items: center;
+    color: $grey200;
+    padding: 8px 0;
+    font-size: 14px;
+    &:hover {
+      color: $white;
+    }
+    &-active {
+      color: $white;
+      border-bottom: 2px solid $white;
+    }
+    @media (min-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+}
