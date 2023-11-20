@@ -3,10 +3,16 @@
 
 // COMPONENTS
 @import './components/button/button.scss';
+@import './components/button-settings/button-settings.scss';
+@import './components/form/form.scss';
 @import './components/icon/icon.scss';
+@import './components/icon-game/icon-game.scss';
 @import './components/input/input.scss';
 @import './components/label/label.scss';
 @import './components/logo/logo.scss';
 @import './components/message/message.scss';
 @import './components/nav/nav.scss';
 @import './components/nav-link/nav-link.scss';
+
+// LAYOUTS
+@import './layouts/auth/layout-auth.scss';

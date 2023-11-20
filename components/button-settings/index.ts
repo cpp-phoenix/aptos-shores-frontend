@@ -1,0 +1,1 @@
+export { default as ButtonSettings } from './button-settings.vue';

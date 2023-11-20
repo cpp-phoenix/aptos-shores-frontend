@@ -1,7 +1,6 @@
 <template>
   <nav class="nav--component">
     <div class="nav--container">
-
       <!-- Logo -->
       <Logo />
 
@@ -19,7 +18,12 @@
       </ul>
 
       <!-- Menu Secondary -->
-      <ul class="nav--menusecondary">
+      <ul v-if="user" class="nav--menusecondary">
+        <li>
+          <ButtonSettings to="/settings" />
+        </li>
+      </ul>
+      <ul v-else class="nav--menusecondary">
         <li>
           <Button to="/auth/register" variant="secondary" size="small">Register</Button>
         </li>
@@ -32,5 +36,6 @@
 </template>
 
 <script lang="ts" setup>
-import { Button, Logo, NavLink } from '@/components';
+import { Button, ButtonSettings, Logo, NavLink } from '@/components';
+const user = useStrapiUser();
 </script>

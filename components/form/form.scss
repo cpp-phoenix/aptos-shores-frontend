@@ -1,0 +1,19 @@
+.form {
+  &--component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &-left {
+      align-items: flex-start;
+    }
+    &-right {
+      align-items: flex-end;
+    }
+
+    &-full {
+      width: 100%;
+    }
+  }
+}

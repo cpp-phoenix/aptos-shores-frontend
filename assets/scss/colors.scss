@@ -64,6 +64,7 @@ $error900: #140307;
 $gradiantPrimary: linear-gradient(to bottom, $primary, $primary700);
 $gradiantGrey: linear-gradient(to bottom, $grey600, $grey800);
 $gradiantError: linear-gradient(to bottom, $error, $error600);
+$gradiantBackground: linear-gradient(135deg, rgba($primary700, 0) 0%, rgba($primary700, 0) 50%, rgba($primary700, 0.3) 100%);
 
 /* ------------ */
 /* -- SHADOW -- */
@@ -71,3 +72,4 @@ $gradiantError: linear-gradient(to bottom, $error, $error600);
 $dropPrimary: 0px 2px 0px 0px $primary400;
 $dropGrey: 0px 2px 0px 0px $grey700;
 $dropError: 0px 2px 0px 0px $error400;
+$shadowBlackWhite: 0px 4px 4px 0px rgba($black, 0.25), 0px 1px 2px 0px rgba($white, 0.10) inset;
