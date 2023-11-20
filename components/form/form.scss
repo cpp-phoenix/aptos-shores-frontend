@@ -16,4 +16,14 @@
       width: 100%;
     }
   }
+
+  &--row {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    .input--component {
+      flex: 1;
+      width: auto;
+    }
+  }
 }

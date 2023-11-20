@@ -90,7 +90,7 @@ const props = defineProps<{
   spellcheck?: string;
   step?: number;
   suffixIcon?: IconName;
-  type?: 'text' | 'tel' | 'number' | 'email';
+  type?: 'text' | 'tel' | 'number' | 'email' | 'password';
 }>();
 
 const emit = defineEmits<{
